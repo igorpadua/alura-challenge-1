@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --cor-principal: #0A3871;
+    --gray-400: #495057;
+    --gray-100: #D8DFE8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background-color: #F3F5FC;
+    height: 100vh;
+}
+
+.corpo {
+    padding: 1%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    gap: 40px;
+}
+
+.logo {
+    width: 5%;
+}
+
+.criptografar-descriptografar {
+    width: 65%;
+    height: 100%;
+    padding-top: 4%;
+}
+
+.texto {
+    color: var(--cor-principal);
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    resize: none;
+}
+
+.texto::placeholder {
+    color: var(--cor-principal);
+    font-size: 2rem;
+}
+
+.texto:focus {
+    outline: none;
+}
+
+.abaixo-texto {
+    height: 20%;
+}
+
+
+.info {
+    color: var(--gray-400);
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 1%;
+}
+
+.icone-exclamacao {
+    margin-right: 1%;
+}
+
+.botoes {
+    display: flex;
+    gap: 30px;
+}
+
+.botao {
+    border: none;
+    border-radius: 24px;
+    padding: 2% 10%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.botao-crip {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.botao-descrip {
+    background-color: var(--gray-100);
+    color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+}
+
+.mensagem-criptografada {
+    background-color: white;
+    border-radius: 32px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+}
+
+.personagem {
+    width: 80%;
+}
+
+.texto-mensagem-criptografada {
+    width: 80%;
+    margin-top: 9%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
