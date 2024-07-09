@@ -28,6 +28,7 @@ body {
 }
 
 .logo {
+    padding-left: 5%;
     width: 5%;
 }
 
@@ -121,4 +122,60 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px
+}
+
+
+@media (max-width: 768px) {
+    .corpo {
+        flex-direction: column;
+        width: 100%;
+        height: 120%;
+        padding: 5%;
+    }
+
+    .logo {
+        padding-top: 4%;
+    }
+
+    .criptografar-descriptografar {
+        width: 100%;
+    }
+
+    .abaixo-texto {
+        width: 100%;
+    }
+
+    .botoes {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .botao {
+        padding: 3% 13%;
+    }
+
+    .mensagem-criptografada {
+        width: 100%;
+        max-width: none;
+        height: 20%;
+    }
+
+    .personagem {
+        display: none;
+    }
+
+    .texto-mensagem-criptografada {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .botoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botao {
+        padding: 5% 10%;
+    }
 }
