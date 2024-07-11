@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Alura Chanllenge</title>
   <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 
 <body>
@@ -15,7 +16,7 @@
   </div>
   <section class="criptografar-descriptografar">
     <label>
-      <textarea class="texto" autofocus placeholder="Digite seu texto"></textarea>
+      <textarea id="texto" class="texto" autofocus placeholder="Digite seu texto"></textarea>
     </label>
     <div class="abaixo-texto">
       <span class="info">
@@ -23,19 +24,27 @@
         Apenas letras minúsculas e sem acento.
       </span>
       <div class="botoes">
-        <button class="botao botao-crip">Criptografar</button>
-        <button class="botao botao-descrip">Descriptografar</button>
+        <button class="botao botao-crip" onclick="criptografar()">Criptografar</button>
+        <button class="botao botao-descrip" onclick="descriptografar()">Descriptografar</button>
       </div>
     </div>
   </section>
-  <section class="mensagem-criptografada">
+  <section id="sem-mensagem" class="mensagem-criptografada">
     <img class="personagem" alt="personagem" src="assets/personagem-lupa.svg">
     <div class="texto-mensagem-criptografada">
       <h1 class="titulo-mensagem-criptografada">Nenhuma mensagem encontrada</h1>
       <p class="pagrafo-mensagem-criptografada">Digite um texto que você deseja criptografar ou descriptografar.</p>
     </div>
   </section>
+
+  <section id="mensagem" class="mensagem-criptografada mensagem" style="display: none">
+    <textarea id="resultado" class="resultado" placeholder="Nenhuma mensagem"></textarea>
+    <button class="botao botao-limpar" onclick="copiar()">Copiar</button>
+  </section>
 </main>
 <footer></footer>
+
+
+<script src="app.js" defer></script>
 </body>
 </html>
